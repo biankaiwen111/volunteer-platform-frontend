@@ -2,6 +2,10 @@
 
 site is deployed with URL: https://friendly-liskov-c81593.netlify.app/
 
+# Note
+
+After sending agreement, you can check it by logging into our team database and check collection "agreement"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
