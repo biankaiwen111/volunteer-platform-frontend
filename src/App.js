@@ -1,6 +1,6 @@
-import "./App.css";
 import $ from "jquery";
 import { useEffect, useState, Fragment } from "react";
+import "./App.css";
 
 function App() {
   const [display, setDisplay] = useState(true);
@@ -11,6 +11,7 @@ function App() {
 
   const clickEnterHandler = (event) => {
     $("#form").css("display", "block");
+    $("#form").addClass("animation");
     setDisplay(false);
   };
 
@@ -20,26 +21,28 @@ function App() {
   };
 
   return (
-    <div>
+    <Fragment>
       {display ? (
-        <Fragment>
+        <div className={"home"}>
           <h1>Welcome to the transferMe volunteer platform!</h1>
           <input
+            className={"prompt"}
             type="button"
             value="Let's Get Started!"
             onClick={clickEnterHandler}
           />
-        </Fragment>
+        </div>
       ) : (
-        <Fragment>
+        <div>
           <input
+            className={"animation"}
             type="button"
             value="Back to home page"
             onClick={clickleaveHandler}
           />
-        </Fragment>
+        </div>
       )}
-    </div>
+    </Fragment>
   );
 }
 

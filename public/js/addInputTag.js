@@ -24,7 +24,7 @@ $(add_matchcondition)
             placeholder="content"
             id="content-${0}"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="switch-to-array" />
         </div>
         <div>
             <input
@@ -74,7 +74,7 @@ $(add_matchcondition)
             placeholder="content"
             id="content-${id}"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="switch-to-array" />
         </div>
         <div>
             <input
@@ -120,7 +120,7 @@ $(add_matchcondition)
           .prev()
           .replaceWith(
             `<div style='min-height: 50px; border: 3px solid #34ebcc; margin-left: 10px;' id="array${temp}">
-        <input type="button" value="Add Element to Array" class="add-to-array" />
+        <input type="button" value="Add Course or Cluster to List" class="add-to-array" />
        </div>`
           );
         $("body")
@@ -171,7 +171,7 @@ function addElementToArray(e) {
             placeholder="content"
             id="content${temp}-${0}"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="switch-to-array" />
         </div>
         <div>
             <input
@@ -200,7 +200,7 @@ function addElementToArray(e) {
             placeholder="content"
             id="equivalences_content${temp}-${0}"
           />
-            <input type="button" value="SWITCH TO ARRAY" class="equivalences-switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="equivalences-switch-to-array" />
           </div>
           <div>
             <input
@@ -290,7 +290,7 @@ function addElementToArray(e) {
             placeholder="content"
             id="content${temp}-${parseInt(prevEle[prevEle.length - 1]) + 1}"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="switch-to-array" />
         </div>
         <div>
             <input
@@ -327,7 +327,7 @@ function addElementToArray(e) {
       parseInt(prevEle[prevEle.length - 1]) + 1
     }"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="equivalences-switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="equivalences-switch-to-array" />
         </div>
         <div>
             <input
@@ -446,7 +446,7 @@ $("body")
       .prev()
       .replaceWith(
         `<div style='min-height: 50px; border: 3px solid #34ebcc; margin-left: 10px;' id="equivalences_array${temp}">
-        <input type="button" value="Add Element to Array" class="equivalences-add-to-array" />
+        <input type="button" value="Add Course or Cluster to List" class="equivalences-add-to-array" />
        </div>`
       );
 
@@ -514,7 +514,7 @@ $("body")
             placeholder="content"
             id="equivalences_content${eleId}%0"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="equivalences-switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="equivalences-switch-to-array" />
         </div>
         <div>
             <input
@@ -568,7 +568,7 @@ $("body")
             placeholder="content"
             id="equivalences_content${currentId.slice(26)}"
             />
-            <input type="button" value="SWITCH TO ARRAY" class="equivalences-switch-to-array" />
+            <input type="button" value="SWITCH TO LIST" class="equivalences-switch-to-array" />
         </div>
         <div>
             <input
