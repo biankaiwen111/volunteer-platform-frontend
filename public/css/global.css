@@ -10,7 +10,10 @@ body {
   color: #223254;
 }
 
-input[type="text"] {
+input[type="text"],
+#university-name,
+#college-name,
+#major-name {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background-color: #ffffff;
   border-radius: 6px;
